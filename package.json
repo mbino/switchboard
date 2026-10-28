@@ -12,7 +12,7 @@
     "electron-dev": "SWITCHBOARD_DATA_DIR=\"$HOME/.switchboard-dev\" electron .",
     "bundle:codemirror": "esbuild public/codemirror-setup.js --bundle --outfile=public/codemirror-bundle.js --format=iife --platform=browser --minify",
     "generate:light-theme": "node scripts/generate-light-theme.js",
-    "generate-icons":"node scripts/generate-icons.js && node scripts/generate-dmg-background.js",
+    "generate-icons": "node scripts/generate-icons.js && node scripts/generate-dmg-background.js",
     "build": "npm run bundle && electron-builder",
     "build:mac": "npm run bundle && electron-builder --mac && node scripts/postinstall.js",
     "build:mac:arm64": "npm run bundle && electron-builder --mac --arm64 && node scripts/postinstall.js",
